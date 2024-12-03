@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios | Luvadak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Luvadak</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li>
+                        <a href="../productos/index.html">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="hombre.html">Hombre</a></li>
+                            <li><a href="mujer.html">Mujer</a></li>
+                            <li><a href="niño.html">Niño</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="../images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="../images/acces.png" alt="Imagen de accesorios">
+            </div>
+            <div class="header-txt">
+                <h1>Accesorios Exclusivos</h1>
+                <p>Agrega estilo y elegancia a tu look con nuestros accesorios únicos.</p>
+                <a href="#productos" class="btn-1">Ver productos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de productos (Accesorios) -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Accesorios Destacados</h2>
+            <div class="productos-lista">
+                <!-- Repite estos bloques para cada producto -->
+                <div class="producto-item">
+                    <img src="../images/acc1.png" alt="Gorro">
+                    <h3>Gorro</h3>
+                    <p class="precio">$35.99</p>
+                    <a href="#" class="btn-2" data-id="acc1">agregar al carrito</a>
+                </div>
+                <div class="producto-item">
+                    <img src="../images/acc2.png" alt="Pulsera trenzada">
+                    <h3>Pulsera trenzada</h3>
+                    <p class="precio">$25.99</p>
+                    <a href="#" class="btn-2" data-id="acc2">Añadir al carrito</a>
+                </div>
+                <div class="producto-item">
+                    <img src="../images/acc3.png" alt="Reloj de pulsera">
+                    <h3>Reloj de Pulsera</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc3">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc4.png" alt="Reloj para compartir">
+                    <h3>Pulsera para compartir</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc4">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc5.png" alt="Pulseras">
+                    <h3>Pulseras</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc5">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc6.png" alt="Lentes">
+                    <h3>Lentes</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc6">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc7.png" alt="Chalina">
+                    <h3>Chalina</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc7">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc8.png" alt="Aretes">
+                    <h3>Aretes</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc8">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc9.png" alt="pulsera">
+                    <h3>Pulsera</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc9">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc11.png" alt="Paquete de Aretes">
+                    <h3>Paquete de Aretes</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc11">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc12.png" alt="Bolso de mano">
+                    <h3>Bolso de mano</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc12">Añadir al carrito</a>
+                </div>
+
+
+                <div class="producto-item">
+                    <img src="../images/acc13.png" alt="Bolsos de mano">
+                    <h3>Bolsos de mano</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc13">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc14.png" alt="pulsera">
+                    <h3>Pulsera</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc14">Añadir al carrito</a>
+                </div>
+
+                <div class="producto-item">
+                    <img src="../images/acc15.png" alt="Collar">
+                    <h3>Collar</h3>
+                    <p class="precio">$40.99</p>
+                    <a href="#" class="btn-2" data-id="acc15">Añadir al carrito</a>
+                </div>
+                <!-- Más productos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>SOPORTE</h3>
+                <ul>
+                    <li><a href="/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="/envios-y-devoluciones.html">Envíos y Devoluciones</a></li>
+                    <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="/terminos-y-condiciones.html">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>CONTACTO</h3>
+                <div class="redes">
+                    <img src="../logos-redes/facebook-brands-solid.svg" alt="Facebook">
+                    <img src="../logos-redes/envelope-solid.svg" alt="Gmail">
+                    <img src="../logos-redes/instagram-brands-solid.svg" alt="Instagram">
+                    <img src="../logos-redes/whatsapp-brands-solid.svg" alt="WhatsApp">
+                </div>
+            </div>
+
+            <div class="link">
+                <h3>INFORMACION</h3>
+                <ul>
+                    <p>RUC: 20501057682</p>
+                    <p>Dirección Legal: Av. Santuario Nro. 1323</p>
+                    <li><a href="../libro-reclamaciones/index.html"><img class="libro"src="../images/libro.png" alt="Descripción de la imagen"></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Scripts -->
+    <script src="../pagina principal/scrp.js"></script>
+</body>
+</html>

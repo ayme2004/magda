@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f5f5f5;
+    padding: 70px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #555;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #ffffff;
+}
+
+.borrar{
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration:none;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ajusté el espacio entre los íconos */
+    margin-top: 10px;
+    margin-bottom: 20px; /* Añadí el espacio en la parte inferior */
+}
+
+.redes img {
+    width: 5rem; /* Tamaño pequeño */
+    height: 3rem;
+    transition: transform 0.3s;
+    cursor: pointer;
+    filter: brightness(0) invert(1); /* Hace que los íconos sean blancos */
+}
+
+.redes img:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento */
+}
+
+
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+}
+
+.header-txt p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+/* Estilo para el contenedor del submenú */
+.dropdown {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Posiciona el submenú sobre el contenedor principal */
+    top: 100%; /* Coloca el submenú justo debajo del elemento principal */
+    left: 0; /* Alinea el submenú con el borde izquierdo del elemento principal */
+    background-color: #4e4b5076; /* Fondo semi-transparente similar al carrito */
+    color: #fff;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 200px; /* Ancho fijo para el submenú */
+    padding: 10px 0; /* Espaciado interno vertical */
+}
+
+/* Mostrar el submenú cuando el li principal esté en hover */
+li:hover .dropdown {
+    display: block; /* Mostrar el submenú cuando el elemento principal es hover */
+}
+
+/* Estilo de los elementos dentro del submenú (verticales) */
+.dropdown li {
+    display: block; /* Apilar los elementos de manera vertical */
+    padding: 10px 20px; /* Espaciado entre los elementos */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Indicador de que se puede hacer clic */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: 600; /* Peso de fuente */
+    text-align: left; /* Alineación a la izquierda */
+    transition: color 0.3s, background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover: color blanco y fondo más oscuro */
+.dropdown li:hover {
+    color: white; /* Cambia el color del texto a blanco al hacer hover */
+}
+
+/* Estilo adicional para el contenedor principal que tiene el submenú */
+li {
+    position: relative; /* Necesario para posicionar el submenú correctamente */
+}
+
+
+
+
+
+
+/*ofertas*/
+
+.ofert{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 15px);
+    background-color: #f5f5f5f5;
+    padding: 35px;
+}
+
+.ofert-img{
+    flex-basis: 50%;
+    margin-right: 15px;
+}
+
+.ofert-img img{
+    width: 250px;
+}
+
+.ofert-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.ofert-txt h3{
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.products{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2{
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.product{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+
+.product img{
+    width: 250px;
+    height: 378px;
+    margin-bottom: 20px;
+}
+
+.product h3{
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p, precio{
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+/* iconos*/
+
+.icons{
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-1{
+    flex-basis: calc(33.3% - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #f5f5f5f5;
+}
+
+.icon-txt h3{
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.icon-txt p{
+    font-size: 16px;
+    color: #111111;
+}
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.blog-1{
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 img{
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.blog-1 p{
+    font-size: 16px;
+    color: #111111;
+}
+
+/* Formulario de Contacto */
+#contacto {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 50px auto; /* Asegura que esté centrado horizontalmente */
+    text-align: center; /* Centra el texto del título y párrafos */
+    max-width: 800px; /* Ancho máximo del contenedor */
+}
+
+#contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título */
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el formulario */
+    gap: 15px; /* Espaciado entre los elementos del formulario */
+    width: 100%; /* Asegura que se adapta al contenedor */
+}
+
+#contacto input, 
+#contacto textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Ancho máximo del input/textarea */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contacto textarea {
+    resize: none;
+}
+
+#contacto button {
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 300px; /* Limita el ancho máximo */
+    padding: 10px 20px; /* Ajusta el padding */
+    border: none;
+    background-color: #111;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #333;
+}
+
+/* Sección de Servicios */
+.services {
+    background-color: #f5f5f5f5;
+    padding: 50px 0;
+    color: #000;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Reducir la separación entre las tarjetas */
+    gap: 15px; /* Menor separación */
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 32%; /* Aumentar el ancho de las tarjetas para que estén más juntas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    color: #000
+    ;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #000;
+    opacity: 0.8;
+}
+
+/* Formulario de Reclamos */
+#libro-reclamaciones {
+    padding: 50px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+#libro-reclamaciones h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#libro-reclamaciones p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-reclamaciones {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2 {
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.product {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 250px;
+    height: 378px;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p, .precio {
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: 800;
+}
+
+/*accesorios*/
+
+.productos{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos h2{
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.productos-lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.producto-item{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+
+.producto-item img{
+    width: 250px;
+    height: 378px;
+    margin-bottom: 20px;
+}
+
+.producto-item h3{
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+}
+
+.producto-item .precio{
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.producto-item .btn-2{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/*footer*/
+.footer{
+    padding: 50px 0;
+    background-color: #111111;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+font-size: 18px;
+color: #ffffff;
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.link a  {
+    font-size: 16px;
+    color: #dcdcdc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link p{
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+
+.libro {
+    width: 90px;
+    box-sizing: border-box; /* Asegura que el padding y los bordes no afecten el ancho */
+}
+
+
+@media (max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+    
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #ffffff;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .submenu:hover #carrito{
+        min-width: 100%;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-img{    
+        display: none;
+    }
+
+    .header-txt{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+
+    .ofert{
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1{
+        margin-bottom: 30px;
+    }
+
+    .products{
+        padding: 0 30px 30px 30px;
+    }
+
+    .products h2{
+        margin-bottom: 30px;
+    }
+
+    .product-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product img{
+        width: 200px;
+        height: 280px;
+    }
+
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+
+    .products h2 {
+        margin-bottom: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 280px;
+    }
+
+    .productos{
+        padding: 0 30px 30px 30px;
+    }
+
+    .productos h2{
+        margin-bottom: 30px;
+    }
+
+    .productos-lista{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .producto-item img{
+        width: 200px;
+        height: 280px;
+    }
+
+    
+    
+    .icons{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .icon-1{
+        margin-bottom: 30px;
+    }
+
+    .blog{
+        padding:  0 30px 30px 30px ;
+        flex-direction: column;
+    }
+
+    .blog-1{
+        margin-bottom: 30px;
+    }
+    .services-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .form-reclamaciones {
+        width: 90%;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}

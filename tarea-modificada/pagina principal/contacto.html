@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../pagina principal/style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Luvadak</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul class="dropdown">
+                            <li><a href="hombre.html">Hombre</a></li>
+                            <li><a href="mujer.html">Mujer</a></li>
+                            <li><a href="niño.html">Niño</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="../images/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>nombre</th>
+                                        <th>precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="../images/right.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>ofertas especiales</h1>
+                <p>estrena las mejores prendas</p>
+                <a href="" class="btn-1">informacion</a>
+            </div>
+        </div>
+    </header>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto container">
+    <h2>Contáctanos</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit" class="btn-1">Enviar</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-content container">
+
+        <div class="link">
+            <h3>SOPORTE</h3>
+            <ul>
+                <li><a href="/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="/envios-y-devoluciones.html">Envíos y Devoluciones</a></li>
+                <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+                <li><a href="/terminos-y-condiciones.html">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="link">
+            <h3>CONTACTO</h3>
+            <div class="redes">
+                <img src="../logos-redes/facebook-brands-solid.svg" alt="Facebook">
+                <img src="../logos-redes/envelope-solid.svg" alt="Gmail">
+                <img src="../logos-redes/instagram-brands-solid.svg" alt="Instagram">
+                <img src="../logos-redes/whatsapp-brands-solid.svg" alt="WhatsApp">
+            </div>
+        </div>
+
+        <div class="link">
+            <h3>INFORMACION</h3>
+            <ul>
+                <p>RUC: 20501057682</p>
+                <p>Dirección Legal: Av. Santuario Nro. 1323</p>
+                <li><a href="../libro-reclamaciones/index.html"><img class="libro"src="../images/libro.png" alt="Descripción de la imagen"></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
+<script src="../pagina principal/script.js"></script>
+</body>
+</html>
